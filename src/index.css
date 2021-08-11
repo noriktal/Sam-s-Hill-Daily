@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 10px auto;
+  text-align: center;
+  background-image: url("./images/wall.jpg");
+}
+
+.App{
+  width: 90vw;
+  margin: 0 auto;
+  background-color: rgba(255,255,255, 0.9);
+}
+
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+  background-color: #454545;
+  padding-bottom: 8px;
+  padding-top: 8px;
+} 
+
+.link{
+  text-decoration: none;
+  padding: 8px;
+  margin: 6px;
+  background: red;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+}
+
+.link:hover{
+  background: white;
+  color: red;
+}
+
+.chosen{
+  background: white;
+  color: red;
+}
+
+
+.headerWrapper{
+  /* margin-top: 20px; */
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/sams-hill.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.titleContainer{
+  background-color: rgba(255,255,255, 0.7);
+}
+
+.headerWrapper h1{
+  color: red;
+  padding: 8px;
+  text-transform:uppercase;
+  font-size: 60px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.listTitle{
+  background-color: red;
+  padding-top:5px;
+  padding-bottom:5px;
+  margin-top:0;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 0.4ch;
+  
+}
+
+.filterDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filterDiv h3{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+.filterDiv form{
+  margin: 0;
+}
+
+.filterDiv input[type="submit"]{
+  margin-left: 5px;
+  color: transparent;
+  border: none;
+  background-image: url("./images/funnel.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.filterDiv input[type="submit"]:hover{
+cursor: pointer;
+background-image: url("./images/funnel-red.png");
+}
+
+.loadingTitle{
+font-size: 60px;
+color: red;
+
+
+}
+
+.listDiv ul{
+width: 70vw;
+margin: 0 auto;
+}
+
+.listDiv a{
+  color: #1C1C1C;
+  text-decoration:none;
+}
+
+.listDiv a:hover{
+  cursor: pointer;
+  color: red;
+}
+
+.listDiv li{
+  list-style: none;
+  border-bottom: 1px solid #454545;
+}
+
+.listDiv li h1{
+  margin-bottom: 6px;
+}
+
+.listDiv li h2{
+  margin-top:2px;
+  
+}
+
+.content{
+  margin-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.articleTitles{
+width:60vw;
+color: white;
+background-color: #555555;
+margin: 0 auto;
+padding: 8px;
+}
+
+.content p{
+  margin-bottom: 30px;
+  text-align: justify;
+  padding: 12px;
+  font-size: 20px;
+}
+
+.content img{
+  width: 300px;
+  height: auto;
+  margin: 8px auto;
+}
+
+/*New Article Submission Page*/
+
+.newForm{
+  display:flex;
+  flex-direction: column;
+}
+
+.newForm label, .newForm span {
+  font-size: 22px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.newForm span{
+  margin-right: 8px;
+  text-transform: uppercase;
+}
+
+.newForm input, .newForm textarea{
+  font-size: 18px;
+  border: 1px solid red;
+}
+
+.newForm input:focus::after{
+  outline: 2.5px solid red;
+}
+
+.newForm input[type="radio" i] {
+  margin-top: 20px;
+}
+.upperForm{
+  margin-left: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.upperForm label{
+  margin-left: 8px;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.chooseCategory{
+  margin-left: 18px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.chooseCategory label{
+  text-transform: uppercase;
+}
+
+.lowerForm{
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+  margin-top: 12px;
+  margin-left: 18px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.lowerForm label{
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+textarea{
+  width: 100%;
+}
+
+.newForm input[type="submit"]{
+  align-self: center;
+  margin-top:5px;
+  margin-bottom: 20px;
+  height: 80px;
+  width: 80px;
+  color: transparent;
+  border: none;
+  background-image: url("./images/plane.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+}
+
+.newForm input[type="submit"]:hover{
+  cursor: pointer;
+  background-image: url("./images/plane-hover.png");
+}
+
+.deleteBtn{
+  color: transparent;
+  border: none;
+  background-image: url("./images/trash.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: transparent;
+}
+
+.deleteBtn:hover{
+transform: rotate(190deg);
+cursor: pointer;
+}
+
